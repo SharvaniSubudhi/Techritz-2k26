@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#061527" />
+  <meta name="description" content="Techritz 2k26 — A National Level Women Techfest at Vignan's Institute of Engineering for Women." />
+  <title>Techritz 2k26 | The Era of Agentic AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  
+  <!-- 1. Header: WHITISH -->
+  <header class="institution-header light-header">
+    <div class="institution-shell">
+      <div class="institution-brand-row">
+        <div class="logo-white-frame">
+          <img src="view-logo.png" alt="Vignan's Institute emblem" class="header-logo-img">
+        </div>
+        <div class="institution-banner-wrap white-header-frame">
+          <img src="view-header.png" alt="Vignan's Institute of Engineering for Women official header" class="header-banner-img">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav">
+    <div class="container nav-inner">
+      <button class="menu-btn" id="menuToggle" aria-label="Open menu">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-item active">Home</a>
+        <a href="#events" class="nav-item">Events</a>
+        <a href="#coordinators" class="nav-item">Coordinators</a>
+        <a href="#video" class="nav-item">Last Year</a>
+        <a href="#events" class="nav-cta-btn">EXPLORE EVENTS</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- 2. Hero: BLUEISH -->
+    <section class="hero blue-section" id="home">
+      <div class="container hero-split-layout">
+        <div class="hero-left-content">
+          <div class="badge-row">
+            <span class="badge-pill gold-pill">TECHRITZ 2k26</span>
+            <span class="badge-pill light-pill">A NATIONAL LEVEL WOMEN TECHFEST</span>
+          </div>
+
+          <h1 class="hero-main-title">
+            <span class="highlight-orange">TECHRITZ-2026</span>
+          </h1>
+
+          <p class="hero-theme-subtitle light-text">
+            THEME: THE ERA OF AGENTIC AI
+          </p>
+
+          <div class="hero-meta-info light-meta">
+            <div class="meta-row">
+              <span class="meta-icon">📅</span>
+              <span>15–16 October 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-icon">📍</span>
+              <span>Vignan's Institute of Engineering for Women, Visakhapatnam, Andhra Pradesh</span>
+            </div>
+          </div>
+
+          <div class="hero-action-row">
+            <a href="#events" class="btn-orange-solid">EXPLORE EVENTS</a>
+          </div>
+        </div>
+
+        <div class="hero-right-poster">
+          <div class="poster-hero-frame" id="posterImage">
+            <img src="techritz-poster.png" alt="Official Techritz 2k26 poster">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Events: WHITISH -->
+    <section class="events-section light-section" id="events">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-kicker orange-kicker">OFFICIAL EVENTS</span>
+            <h2 class="dark-title">Explore &amp; Register for Events</h2>
+            <p class="dark-subtext">Click on any event card below to view full details and registration link.</p>
+          </div>
+          <input id="eventSearch" class="light-input sleek-search" type="search" placeholder="Search an event…" aria-label="Search events">
+        </div>
+        <div class="event-tabs light-tabs" id="eventFilters">
+          <button class="active" data-filter="all">All Events</button>
+          <button data-filter="events">Technical Events</button>
+          <button data-filter="cultural">Culturals &amp; Creative</button>
+        </div>
+        <div class="event-grid" id="eventGrid"></div>
+      </div>
+    </section>
+
+    <!-- 4. Coordinators: BLUEISH -->
+    <section class="coordinators-section blue-section" id="coordinators">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="section-kicker gold-kicker lg-kicker">OFFICIAL CONTACTS</span>
+          <h2 class="gold-title">Convenor &amp; Co-Convenor</h2>
+          <p class="gold-subtext">Contact details and leadership from the official event poster.</p>
+        </div>
+        <div class="lead-contacts">
+          <div class="contact-card lead flex-lead dark-card">
+            <div class="lead-avatar">
+              <img src="csehod.jpg" alt="Dr. P. Vijaya Bharati">
+            </div>
+            <div class="lead-info">
+              <small class="gold-tag">CONVENOR</small>
+              <h3 class="white-text">Dr. P. VIJAYA BHARATI</h3>
+              <p class="sub-white-text">HoD, CSE</p>
+            </div>
+          </div>
+          <div class="contact-card lead flex-lead dark-card">
+            <div class="lead-avatar">
+              <img src="Acse_Hod.jpeg" alt="Dr. R. Manoj Kumar">
+            </div>
+            <div class="lead-info">
+              <small class="gold-tag">CO-CONVENOR</small>
+              <h3 class="white-text">Dr. R. MANOJ KUMAR</h3>
+              <p class="sub-white-text">HoD, ACSE</p>
+            </div>
+          </div>
+        </div>
+        <div class="student-grid" id="studentGrid"></div>
+      </div>
+    </section>
+
+    <!-- 5. Last Year Video: WHITISH -->
+    <section class="video-section light-section" id="video">
+      <div class="container video-layout">
+        <div>
+          <span class="section-kicker orange-kicker">FROM LAST YEAR</span>
+          <h2 class="dark-title">Techritz 2k25</h2>
+          <p class="dark-subtext">Relive last year's Techritz through the official video highlights.</p>
+          <a class="btn-orange-solid" href="https://youtu.be/VEwndvGYxSY?si=0vzn21xr3tlfP_Kl" target="_blank" rel="noopener">Watch on YouTube →</a>
+        </div>
+        <div class="video-card light-video-frame">
+          <iframe src="https://www.youtube.com/embed/VEwndvGYxSY" title="Techritz2k25 Video" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 6. Footer: BLUEISH / DARK -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <!-- Column 1: Brand -->
+      <div class="footer-brand-wrap">
+        <div class="footer-logo-title-row">
+          <img src="view-logo.png" class="footer-logo" alt="VIEW emblem">
+          <div class="footer-title-block">
+            <h3>VIGNAN'S INSTITUTE OF ENGINEERING FOR WOMEN</h3>
+            <p>(AUTONOMOUS)</p>
+          </div>
+        </div>
+        <p class="footer-address">Kapujaggarajupeta, VSEZ (Post), Duvvada, Visakhapatnam, Andhra Pradesh 530049</p>
+      </div>
+
+      <!-- Column 2: Navigation Links -->
+      <div class="footer-links-col">
+        <h4>TECHRITZ 2k26</h4>
+        <a href="#home">Home</a>
+        <a href="#events">Events</a>
+        <a href="#coordinators">Coordinators</a>
+        <a href="#video">Last Year</a>
+      </div>
+
+      <!-- Column 3: Contact Details & Callout -->
+      <div class="footer-contact-col">
+        <h4>CONTACT US</h4>
+        <a href="mailto:viewtechritz2026@gmail.com">viewtechritz2026@gmail.com</a>
+        <a href="tel:+919966144030">Dr. R. Manoj Kumar . HoD, ACSE</a>
+        <span>Dr. P. Vijaya Bharati · HoD, CSE</span>
+        <div class="footer-callout">
+          <span>OCTOBER 15<sup>th</sup> &amp; 16<sup>th</sup></span>
+          <strong>The Era of Agentic AI</strong>
+          <p>Early Bird Registration Closes: 06th Oct 2026</p>
+        </div>
+      </div>
+
+      <!-- Column 4: Google Map -->
+      <div class="footer-map-col">
+        <h4>LOCATION</h4>
+        <div class="footer-map-frame">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3800.5979603812034!2d83.17423757487576!3d17.71644259324292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3968b80a531cb7%3A0xe76b039512ff9e79!2sVignan's%20Institute%20of%20Engineering%20for%20Women!5e0!3m2!1sen!2sin!4v1769660579814!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                   
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 Vignan's Institute of Engineering for Women · Techritz 2k26</div>
+  </footer>
+
+  <div class="modal" id="posterModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card poster-modal-card">
+      <button class="modal-close" data-close>×</button>
+      <img src="assets/techritz-poster.png" alt="Official Techritz poster">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
