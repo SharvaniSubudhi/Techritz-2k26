@@ -59,9 +59,7 @@ button { cursor: pointer; }
 .sub-white-text { color: #b8d0e5 !important; }
 .light-text { color: #f1f5f9 !important; }
 
-/* ==========================================
-   1. HEADER SECTION (LOGO POSITIONED TO LEFT)
-   ========================================== */
+/* Header Section */
 .institution-header.light-header {
   background: #ffffff;
   padding: 8px 0;
@@ -84,7 +82,6 @@ button { cursor: pointer; }
   gap: 0;
 }
 
-/* Circular logo frame to the left of the header */
 .logo-white-frame {
   background: transparent;
   padding: 0;
@@ -95,7 +92,7 @@ button { cursor: pointer; }
   justify-content: center;
   flex-shrink: 0;
   border-radius: 50%;
-  margin-right: 12px; /* Clean gap preventing overlap */
+  margin-right: 12px;
   z-index: 2;
 }
 
@@ -107,7 +104,6 @@ button { cursor: pointer; }
   display: block;
 }
 
-/* Banner frame */
 .white-header-frame {
   background: transparent;
   padding: 0;
@@ -165,7 +161,7 @@ button { cursor: pointer; }
 }
 .menu-btn { display: none; margin-left: auto; border: 0; background: transparent; color: white; font-size: 26px; }
 
-/* 2. Hero Section */
+/* Hero Section */
 .hero { padding: 60px 0 80px; }
 .hero-split-layout { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center; }
 .badge-row { display: flex; gap: 10px; align-items: center; margin-bottom: 22px; }
@@ -184,7 +180,7 @@ button { cursor: pointer; }
 .poster-hero-frame:hover { transform: scale(1.01); }
 .poster-hero-frame img { width: 100%; height: auto; display: block; border-radius: 10px; }
 
-/* 3. Events Section */
+/* Events Section */
 .events-section { padding: 80px 0; }
 .section-heading { display: flex; justify-content: space-between; align-items: flex-end; gap: 30px; margin-bottom: 28px; }
 
@@ -219,6 +215,7 @@ button { cursor: pointer; }
 
 .event-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
+/* Event Card & Header Branding Styling */
 .event-card {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -226,6 +223,7 @@ button { cursor: pointer; }
   padding: 24px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.04);
   cursor: pointer;
+  user-select: none;
   transition: all 0.25s ease-in-out;
   display: flex;
   flex-direction: column;
@@ -238,10 +236,29 @@ button { cursor: pointer; }
 }
 .event-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
 
+.event-club-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.club-logo-img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  border-radius: 6px;
+  border: 1px solid rgba(245, 181, 27, 0.4);
+  background: #ffffff;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
 .event-number { 
   font-size: 15px; 
   font-weight: 800; 
   color: #e05b10; 
+  margin-right: 2px;
 }
 
 .event-badge { 
@@ -254,6 +271,7 @@ button { cursor: pointer; }
   letter-spacing: 0.05em; 
   box-shadow: 0 2px 6px rgba(224, 91, 16, 0.25);
   border: none;
+  text-transform: uppercase;
 }
 
 .event-card h3 { font-family: "Plus Jakarta Sans"; font-size: 20px; margin: 6px 0 8px; color: var(--dark-text); font-weight: 700; }
@@ -263,8 +281,32 @@ button { cursor: pointer; }
 .event-card.expanded .event-expand-details { display: block; }
 .event-card.expanded { border-color: #e05b10; box-shadow: 0 10px 30px rgba(224, 91, 16, 0.2); }
 
+/* Coordinator Details list formatting */
+.coordinator-list {
+  font-size: 13px;
+  color: var(--dark-text-sub);
+  margin-bottom: 12px;
+}
+.coordinator-title {
+  color: var(--dark-text);
+  margin-bottom: 4px;
+}
+.coordinator-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 6px 0 0 0;
+}
+.coordinator-list li {
+  margin-bottom: 4px;
+}
+.coordinator-list a {
+  color: var(--orange-accent);
+  font-weight: 700;
+}
+
 .event-register-btn {
   display: block;
+  width: 100%;
   text-align: center;
   background: var(--gold-gradient);
   color: #ffffff;
@@ -274,23 +316,42 @@ button { cursor: pointer; }
   font-size: 13px;
   letter-spacing: 0.04em;
   margin-top: 10px;
+  border: none;
   box-shadow: 0 4px 12px rgba(224, 91, 16, 0.35);
   transition: transform 0.2s ease;
 }
-.event-register-btn:hover { transform: scale(1.02); }
+.event-register-btn:hover:not(:disabled) { transform: scale(1.02); }
 
+.event-register-btn.closed-btn {
+  background: #64748b;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.85;
+}
+
+/* Card Action Hint (Explicit Orange Text Styling) */
 .card-action-hint { 
   font-size: 13px; 
   font-weight: 800; 
-  color: #e05b10; 
+  color: #e05b10 !important; 
   margin-top: auto; 
-  padding-top: 12px; 
+  padding-top: 14px; 
   display: flex;
   align-items: center;
   gap: 4px;
+  transition: color 0.2s ease;
 }
 
-/* 4. Coordinators Section */
+.card-action-hint span {
+  color: #e05b10 !important;
+}
+
+.event-card:hover .card-action-hint,
+.event-card:hover .card-action-hint span {
+  color: #f5b51b !important;
+}
+
+/* Coordinators Section */
 .coordinators-section { padding: 80px 0; }
 .centered { text-align: center; display: block; }
 
@@ -371,15 +432,13 @@ button { cursor: pointer; }
 .student-card span { display: block; color: var(--gold-accent); font-weight: 700; }
 .student-card small { display: block; color: var(--text-light-sub); margin-top: 2px; }
 
-/* 5. Last Year Video */
+/* Last Year Video */
 .video-section { padding: 80px 0; }
 .video-layout { display: grid; grid-template-columns: .75fr 1.25fr; gap: 45px; align-items: center; }
 .video-card.light-video-frame { border: 2px solid var(--orange-accent); border-radius: 16px; overflow: hidden; aspect-ratio: 16/9; background: #000000; box-shadow: 0 0 20px rgba(224, 91, 16, 0.2); }
 .video-card iframe { width: 100%; height: 100%; border: 0; }
 
-/* ==========================================
-   6. FOOTER SECTION WITH MAP
-   ========================================== */
+/* Footer Section */
 .site-footer { 
   background: var(--navy-dark); 
   border-top: 2px solid var(--gold-accent); 
@@ -497,43 +556,18 @@ button { cursor: pointer; }
 .poster-modal-card img { display: block; max-width: 100%; max-height: 86vh; object-fit: contain; }
 .modal-close { position: absolute; right: 12px; top: 10px; width: 34px; height: 34px; border-radius: 50%; border: 1px solid #55748e; background: #0b2037; color: #fff; font-size: 22px; z-index: 2; }
 
-/* ==========================================
-   7. RESPONSIVE DEVICE DIMENSIONS
-   ========================================== */
+/* Responsive Adjustments */
 @media (max-width: 1024px) {
-  .footer-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-  }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 30px; }
 }
 
 @media (max-width: 768px) {
-  .institution-header.light-header {
-    padding: 6px 0;
-  }
+  .institution-header.light-header { padding: 6px 0; }
+  .institution-brand-row { flex-direction: row !important; align-items: center; justify-content: center; gap: 0; width: 100%; }
+  .logo-white-frame { margin-right: 8px; }
+  .header-logo-img { height: 52px; width: 52px; }
+  .header-banner-img { max-height: 52px; }
 
-  .institution-brand-row { 
-    flex-direction: row !important; 
-    align-items: center; 
-    justify-content: center; 
-    gap: 0; 
-    width: 100%;
-  }
-
-  .logo-white-frame {
-    margin-right: 8px;
-  }
-
-  .header-logo-img { 
-    height: 52px; 
-    width: 52px; 
-  }
-
-  .header-banner-img { 
-    max-height: 52px; 
-  }
-
-  /* Navigation mobile menu */
   .menu-btn { display: block; }
   .nav-links { 
     display: none; 
@@ -551,36 +585,18 @@ button { cursor: pointer; }
   .nav-links .nav-item { height: auto; padding: 12px; }
   .nav-cta-btn { margin-left: 0; text-align: center; margin-top: 8px; }
 
-  /* Grid Layouts */
   .hero-split-layout { grid-template-columns: 1fr; }
   .event-grid { grid-template-columns: 1fr; }
   .student-grid { grid-template-columns: repeat(2, 1fr); }
   .lead-contacts { grid-template-columns: 1fr; }
   .video-layout { grid-template-columns: 1fr; }
   .sleek-search { width: 100%; }
-
-  /* Footer on mobile */
-  .footer-grid { 
-    grid-template-columns: 1fr; 
-    gap: 25px;
-  }
+  .footer-grid { grid-template-columns: 1fr; gap: 25px; }
 }
 
 @media (max-width: 480px) {
-  .logo-white-frame {
-    margin-right: 6px;
-  }
-
-  .header-logo-img { 
-    height: 42px; 
-    width: 42px; 
-  }
-
-  .header-banner-img { 
-    max-height: 44px; 
-  }
-  
-  .hero-main-title {
-    font-size: 34px;
-  }
+  .logo-white-frame { margin-right: 6px; }
+  .header-logo-img { height: 42px; width: 42px; }
+  .header-banner-img { max-height: 44px; }
+  .hero-main-title { font-size: 34px; }
 }
