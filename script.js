@@ -96,8 +96,14 @@ const events = [
     id: 11,
     name: 'Business Ideas',
     cat: 'events',
+    organizer: 'MBA Department- VIEW',
     desc: 'A startup pitch competition where teams present viable business models, market strategies, and scalable products to a panel of judges.',
-    link: 'https://forms.gle/techritz2k26-business-ideas'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLScKe9iFFABAGjyoq8ZK4Gxb78gxSoR200m67Yy1-j4TYVuocw/viewform?usp=publish-editor',
+    coordinators: [
+      { name: 'M.KARUNA KUMARI', phone: '8121152869' },
+      { name: 'K.MEGHANA', phone: '9652329754' },
+      { name: 'M.LIKHITA', phone: '9328102713' }
+    ]
   },
   {
     id: 12,
@@ -111,7 +117,7 @@ const events = [
     name: 'Innovation Ideas',
     cat: 'events',
     desc: 'A conceptual brainstorming contest where students pitch novel solutions and disruptive technologies addressing real-world societal or industry challenges.',
-    link: 'https://forms.gle/techritz2k26-innovative-ideas'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSd5pnFqBdhDoKXj5r8zw6rrzAfMu3cUxzxpQFNgYwyQRwTb8Q/viewform?usp=publish-editor'
   },
   {
     id: 14,
@@ -165,7 +171,7 @@ const events = [
     name: 'Prompt Challenge',
     cat: 'events',
     desc: 'A generative AI competition where participants engineer precise prompts to achieve specific, high-quality AI outputs in image, text, or code generation.',
-    link: 'https://forms.gle/techritz2k26-prompt-challenge'
+    link: 'https://forms.gle/mp7Gsr4TgmYVByAv5⁠'
   },
   {
     id: 18,
@@ -179,7 +185,7 @@ const events = [
     name: 'Escape The Server',
     cat: 'events',
     desc: 'An immersive escape-room style challenge where teams solve terminal commands, system puzzles, security exploits, and backend clues to "break out" of a locked server environment.',
-    link: 'https://forms.gle/techritz2k26-escape-server'
+    link: 'https://q.me-qr.com/skm0myt8'
   }
 ];
 
