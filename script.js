@@ -11,7 +11,7 @@ const events = [
     name: 'Circuitrix',
     cat: 'events',
     desc: 'A technical contest focused on analyzing, designing, testing, and troubleshooting electronic circuits and logic diagrams.',
-    link: 'https://forms.gle/techritz2k26-circuitrix'
+    link: 'https://forms.gle/bJc8FqJUDkg9pYfEA'
   },
   {
     id: 3,
@@ -56,7 +56,7 @@ const events = [
     name: 'Technical Treasure Hunt',
     cat: 'events',
     desc: 'An interactive challenge where teams solve tech-themed riddles, code snippets, and logic puzzles to uncover physical or digital clues leading to the final prize.',
-    link: 'https://forms.gle/techritz2k26-treasure-hunt'
+    link: 'https://forms.gle/9o5sRNBJgDY2Cfj86'
   },
   {
     id: 8,
@@ -110,7 +110,7 @@ const events = [
     name: 'Third Eye',
     cat: 'events',
     desc: 'A creative visual or analytical event focused on hidden detail identification, observational photography, or unconventional problem-solving perspectives.',
-    link: 'https://forms.gle/techritz2k26-third-eye'
+    link: 'https://docs.google.com/forms/d/e/1FAIpQLSf6GNbwQVAwWDJO-j_js1Z59B1i04MDtwn2YY_FjgKtztUpNg/viewform'
   },
   {
     id: 13,
@@ -153,6 +153,21 @@ const events = [
   },
   {
     id: 16,
+    name: 'Ascend',
+    cat: 'events',
+    desc: 'ASCEND 2026 features 3 exciting rounds designed around the entrepreneurial journey 🧩 ROUND 1 – Crossword PuzzlePut your knowledge of startups, business, and entrepreneurship to the test through an engaging crossword challenge.📊 ROUND 2 – Case Study with Quiz Do the case study and learn deep about the startup and answer the questions with your knowledge 💰 ROUND 3 – Disruption Round Think like a founder under pressure! Work with limited resources and changing business conditions, make smart decisions, manage your budget, and demonstrate your ability to adapt, strategize, and grow a startup. 🚀',
+    link: 'https://forms.gle/mwcxTGx9Y3TxN6y67 ',
+  },
+  {
+    id: 17,
+    name: 'Ethical Hacking Workshop',
+    cat: 'events',
+    desc: 'An intensive time-bound event where teams collaborate continuously to design, prototype, and build a working software or hardware product from scratch.',
+    link: '#',
+
+  },
+  {
+    id: 18,
     name: 'CODE JIGSAW',
     cat: 'events',
     logo: 'CN-LOGO.jpeg',
@@ -167,21 +182,21 @@ const events = [
     ]
   },
   {
-    id: 17,
+    id: 19,
     name: 'Prompt Challenge',
     cat: 'events',
     desc: 'A generative AI competition where participants engineer precise prompts to achieve specific, high-quality AI outputs in image, text, or code generation.',
     link: 'https://forms.gle/mp7Gsr4TgmYVByAv5⁠'
   },
   {
-    id: 18,
+    id: 20,
     name: 'Reels Contest',
     cat: 'creative',
     desc: 'A short-form video creation event focusing on fast-paced storytelling, dynamic editing, and creative content creation on a given theme.',
     link: 'https://forms.gle/techritz2k26-reels-contest'
   },
   {
-    id: 19,
+    id: 21,
     name: 'Escape The Server',
     cat: 'events',
     desc: 'An immersive escape-room style challenge where teams solve terminal commands, system puzzles, security exploits, and backend clues to "break out" of a locked server environment.',
